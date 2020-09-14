@@ -8,7 +8,6 @@ const app = express()
 
 // app.use((req, res, next) => {
 //          return res.status(503).send({error: 'Site is under maintenance, please try again later'})
-//
 // })
 
 app.use(express.json())
