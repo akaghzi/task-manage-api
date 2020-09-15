@@ -68,7 +68,7 @@ router.delete('/users/me', auth, async (req, res) => {
         try {
             //req.user.remove()
             const user = await User.findById(req.current_user.id)
-            console.log(user)
+            // console.log(user)
             user.remove()
             sendGoodbyeEmail(user.email, user.name)
             // // console.log(user)
